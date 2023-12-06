@@ -10,13 +10,17 @@ func require(uint32)
 
 func main() {
 	var a0, a1 uint64
-	a0 = wasm_input(1)
-	a1 = wasm_input(1)
-	for i := 2; i <= 1000; i++ {
-		a0, a1 = a1, a0 + a1
+	a0 = 0
+	a1 = 1
+
+	var p uint64
+	p = 1<<32
+
+	for i := 2; i <= 100000; i++ {
+		a0, a1 = a1, a0 % p + a1 % p
 	}
 	an := wasm_input(1)
 	if an != a1 {
-		require(0)
+		require(1)
 	}
 }
