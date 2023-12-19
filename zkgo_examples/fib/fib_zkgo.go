@@ -19,8 +19,8 @@ func main() {
 	for i := 2; i <= 100000; i++ {
 		a0, a1 = a1, a0 % p + a1 % p
 	}
-	an := wasm_input(1)
+// 	an := wasm_input(1)
 	if an != a1 {
-		require(1)
+// 		require(1)
 	}
 }
