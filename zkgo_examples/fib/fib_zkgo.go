@@ -20,7 +20,7 @@ func main() {
 		a0, a1 = a1, a0 % p + a1 % p
 	}
 // 	an := wasm_input(1)
-	if an != a1 {
+// 	if an != a1 {
 // 		require(1)
-	}
+// 	}
 }
