@@ -16,7 +16,7 @@ func main() {
 	var p uint64
 	p = 1<<32
 
-	for i := 2; i <= 100000; i++ {
+	for i := 2; i <= 100; i++ {
 		a0, a1 = a1, a0 % p + a1 % p
 	}
 // 	an := wasm_input(1)
